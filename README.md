@@ -24,6 +24,8 @@ If you are using Netlify to host your hugo site, you will want to add it as a su
 
 This is because Netlify uses the hugo build command when autopublish is enabled and will produce an error if the theme is not a submodule. See the [Hugo Guide](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify) for more information.
 
+If your javascript or css isn't rendering, check your BaseURL frontmatter in the `config.toml` file. This needs to be set to match the URL you are publishing to. i.e. if you are publishing to https://www.yourdomain.com your frontmatter should be `BaseURL = https://www.yourdomain.com`
+
 ## Using the theme
 
 After cloning Forty or adding it as a submodule, there are a few other things you should do:
@@ -75,4 +77,4 @@ For more information read the [License](//github.com/MarcusVirg/forty/blob/maste
 Thanks to:
 
 - AJ from [HTML5 UP](https://html5up.net/) for creating the theme
-- [Steve Francia](//github.com/spf13), [digitalcraftsman](//github.com/digitalcraftsman), and others for creating and maintaining Hugo.
+- [Bjørn Erik Pedersen](https://github.com/bep), [Steve Francia](//github.com/spf13), [digitalcraftsman](//github.com/digitalcraftsman), and others for creating and maintaining Hugo.
